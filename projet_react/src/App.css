@@ -68,7 +68,7 @@
     line-height: 1.2;
     color: rgb(22, 55, 103);
     margin-left: 16px;
-}
+  }
 
   .contour {
     border-radius: 16px;
@@ -80,8 +80,42 @@
     width: fit-content;
     background-color: white;
 
+    .card-body {
+      padding: 0;
+
+      img {
+        width: 359px;
+        height: 224px;
+      }
+
+      .card-subtitle {
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        color: rgba(31, 34, 38, 0.6);
+        font-weight: bold;
+        margin: 16px 16px;
+        display: flex;
+      }
+
+      .card-title {
+        color: rgb(22, 55, 103);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -0.00833em;
+        display: flex;
+        margin: 8px 16px;
+      }
+
+      .card-text{
+        display: flex;
+        margin: 8px 16px;
+      }
+
+    }
+
     .card {
-      height: 400px;
+      height: 443px;
       width: 359px;
       margin: 16px;
       position: relative;

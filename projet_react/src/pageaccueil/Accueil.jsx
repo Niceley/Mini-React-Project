@@ -25,6 +25,7 @@ function Accueil() {
                         title={article.title} 
                         content={article.content}
                         date={article.date}
+                        image = {article.image}
                          />
                     ))}
                 </div>
