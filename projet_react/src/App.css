@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.header{
+  background-color: rgb(22, 55, 103);
+  display: flex;
+  z-index: 100;
+  color: rgb(255, 255, 255);
+  min-height: 64px;
+}
+
+.left img {
+  margin: 16px;
+  width: 150px;
+  height: auto;
+}
