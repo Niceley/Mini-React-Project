@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Accueil from './pageaccueil/Accueil';
+import Accueil from './pageaccueil/Accueil/Accueil';
 import { ArticleDetails } from './articleDetail/ArticleDetail';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from '../src/navbar/Navbar';

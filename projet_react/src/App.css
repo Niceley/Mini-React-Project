@@ -9,6 +9,9 @@
     height:100vh;
   }
 }
+
+
+
 p{
   margin: 0 !important;
 }
@@ -58,6 +61,7 @@ p{
     line-height: 1.2;
     color: rgb(22, 55, 103);
     margin-left: 16px;
+    align-items: center;
 
     &.network {
       position: sticky;
@@ -76,9 +80,10 @@ p{
     box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 6px;
     max-width: 830px;
     flex-wrap: wrap;
-    padding: 24px 24px 0px;
+    padding: 12px 24px 0px;
     width: fit-content;
     background-color: white;
+    max-height: 998px;
 
     &.network{
       flex-direction: column;
