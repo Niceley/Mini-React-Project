@@ -26,6 +26,9 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    <div class="footer">
+    <p class="sc-bczRLJ eOTaif MuiTypography-root MuiTypography-body2">©2024 Efrei</p>|<a class="sc-wAnfg eCghVz" href="/portal/student/donnees-personnelles"><p class="sc-bczRLJ eOTaif MuiTypography-root MuiTypography-body2" underline="none">Données personnelles</p></a>|<a class="sc-bczRLJ gJtBLE MuiTypography-root MuiTypography-inherit sc-iBkjds bmqjhd MuiLink-root MuiLink-underlineHover" href="https://www.efrei.fr/" target="_blank" rel="noopener noreferrer"><p class="sc-bczRLJ eOTaif MuiTypography-root MuiTypography-body2">Efrei.fr</p></a>
+    </div>
     </div>
     </>
   );
