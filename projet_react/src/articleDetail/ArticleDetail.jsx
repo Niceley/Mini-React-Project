@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import articles from '../pageaccueil/ListeArticle/ListeArticle';
 import './style.css';
+import Carrousel from '../pageaccueil/carrousel/Carrousel';
 
 
 export const ArticleDetails = () => {
@@ -11,9 +12,7 @@ export const ArticleDetails = () => {
         return <p>Article inexistant</p>;
       }
     return(<div className='articleFull'>
-      <div className="carrousel">
-        <img src={article.image} alt={article.title} />
-      </div>
+        <Carrousel />
         <h2 className="titre">
           {article.title}
         </h2>

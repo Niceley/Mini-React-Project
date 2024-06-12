@@ -4,11 +4,13 @@ import ArticleCard from './ArticleCard';
 import articles from './ListeArticle/ListeArticle';
 import listePosteReseaux from './ListeArticle/ListePosteReseaux';
 import Reseau from './Reseau';
+import Carrousel from './carrousel/Carrousel';
 
 function Accueil() {
 
     return (
         <div className='accueil'>
+            <Carrousel />
             <div className="center">
                 <div className="contour">
                     <div className="actualité"> Actualités </div>
