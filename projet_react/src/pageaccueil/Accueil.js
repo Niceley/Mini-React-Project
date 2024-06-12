@@ -16,8 +16,8 @@ function Accueil() {
         </div>
     </div>
       <h1 className="mb-3">Page d'Accueil</h1>
-      {articles.map(article => (
-        <Article key={article.id} title={article.title} content={article.content} />
+      {articles.map((article, key) => (
+        <Article key={key} title={article.title} content={article.content} />
       ))}
     </div>
   );
