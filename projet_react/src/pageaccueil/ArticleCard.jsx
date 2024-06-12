@@ -9,7 +9,7 @@ function ArticleCard({ id, title, content, date, image }) {
                     <img className="card-img-top" src={image} alt="Image article card"></img>
                     <h6 className="card-subtitle mb-2 text-muted">{date}</h6>
                     <h2 className="card-title">{title}</h2>
-                    <p className="card-text">{content}</p>
+                    <p className="card-text contenu">{content}</p>
                 </div>
             </div>
         </Link>
