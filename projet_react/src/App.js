@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Accueil from './pageaccueil/Accueil';
-import { ArticleDetails } from './pageaccueil/ArticleDetail';
+import { ArticleDetails } from './articleDetail/ArticleDetail';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
@@ -22,7 +22,7 @@ function App() {
       <Routes>
         <Route path="/">
           <Route index element={<Accueil />} />
-          <Route path="article" element={<ArticleDetails />} />
+          <Route path="article/:id" element={<ArticleDetails />} />
         </Route>
       </Routes>
     </BrowserRouter>

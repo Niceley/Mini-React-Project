@@ -14,12 +14,13 @@ function Accueil() {
                 <div class="contour">
                     <div class="actualité"> Actualités </div>
                     {articles.map((article, key) => (
-                        <ArticleCard key={key}
-                            title={article.title}
-                            content={article.content}
-                            date={article.date}
-                            image={article.image}
-                        />
+                        <ArticleCard key={article.id} 
+                        id={article.id}
+                        title={article.title} 
+                        content={article.content}
+                        date={article.date}
+                        image = {article.image}
+                         />
                     ))}
                 </div>
 
