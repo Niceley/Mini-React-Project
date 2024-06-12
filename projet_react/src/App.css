@@ -3,10 +3,12 @@
   height:90vh;
 }
 
-.accueil{
-  height:100vh;
-}
 
+@media (min-width : 2500px) {
+  .accueil{
+    height:100vh;
+  }
+}
 p{
   margin: 0 !important;
 }
