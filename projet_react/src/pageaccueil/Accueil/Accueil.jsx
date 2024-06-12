@@ -7,6 +7,7 @@ import Reseau from '../Reseau';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import './Accueil.css';
+import Carrousel from '../carrousel/Carrousel';
 
 function Accueil() {
 
@@ -32,6 +33,7 @@ function Accueil() {
 
     return (
         <div className='accueil'>
+            <Carrousel />
             <div className="center">
                 <div className="contour">
                     <div className="actualité"> Actualités
