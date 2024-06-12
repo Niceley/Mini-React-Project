@@ -9,9 +9,9 @@ function Accueil() {
 
     return (
         <div className='accueil'>
-            <div class="center">
-                <div class="contour">
-                    <div class="actualité"> Actualités </div>
+            <div className="center">
+                <div className="contour">
+                    <div className="actualité"> Actualités </div>
                     {articles.map((article, key) => (
                         <ArticleCard key={article.id} 
                         id={article.id}
@@ -23,8 +23,8 @@ function Accueil() {
                     ))}
                 </div>
 
-                <div class="contour network">
-                    <div class="actualité network"> Sur les réseaux </div>
+                <div className="contour network">
+                    <div className="actualité network"> Sur les réseaux </div>
                     {listePosteReseaux.map((article, key) => (
                         <Reseau key={key}
                             content={article.content}

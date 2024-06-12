@@ -10,8 +10,8 @@ import Navbar from '../src/navbar/Navbar';
 
 function App() {
   return (<>
-    <div class="header">
-      <div class="left">
+    <div className="header">
+      <div className="left">
         <a>
           <img alt="Logo myEfrei"
             src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Languages/French/LOGO_EFREI-WEB_blanc.png"></img>
@@ -28,8 +28,8 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-      <div class="footer">
-        <p class="sc-bczRLJ eOTaif MuiTypography-root MuiTypography-body2">©2024 Efrei</p>|<a class="sc-wAnfg eCghVz" href="/portal/student/donnees-personnelles"><p class="sc-bczRLJ eOTaif MuiTypography-root MuiTypography-body2" underline="none">Données personnelles</p></a>|<a class="sc-bczRLJ gJtBLE MuiTypography-root MuiTypography-inherit sc-iBkjds bmqjhd MuiLink-root MuiLink-underlineHover" href="https://www.efrei.fr/" target="_blank" rel="noopener noreferrer"><p class="sc-bczRLJ eOTaif MuiTypography-root MuiTypography-body2">Efrei.fr</p></a>
+      <div className="footer">
+        <p className="sc-bczRLJ eOTaif MuiTypography-root MuiTypography-body2">©2024 Efrei</p>|<a className="sc-wAnfg eCghVz" href="/portal/student/donnees-personnelles"><p className="sc-bczRLJ eOTaif MuiTypography-root MuiTypography-body2" underline="none">Données personnelles</p></a>|<a className="sc-bczRLJ gJtBLE MuiTypography-root MuiTypography-inherit sc-iBkjds bmqjhd MuiLink-root MuiLink-underlineHover" href="https://www.efrei.fr/" target="_blank" rel="noopener noreferrer"><p className="sc-bczRLJ eOTaif MuiTypography-root MuiTypography-body2">Efrei.fr</p></a>
       </div>
     </div>
   </>
