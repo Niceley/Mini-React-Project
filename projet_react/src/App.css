@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: rgb(250, 250, 250);
 }
 
 .App-logo {
@@ -32,12 +33,13 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.header{
+.header {
   background-color: rgb(22, 55, 103);
   display: flex;
   z-index: 100;
@@ -49,4 +51,42 @@
   margin: 16px;
   width: 150px;
   height: auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .actualité {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-family: NeoSansPro, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: rgb(22, 55, 103);
+    margin-left: 16px;
+}
+
+  .contour {
+    border-radius: 16px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 6px;
+    max-width: 830px;
+    flex-wrap: wrap;
+    padding: 24px 24px 0px;
+    width: fit-content;
+    background-color: white;
+
+    .card {
+      height: 400px;
+      width: 359px;
+      margin: 16px;
+      position: relative;
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+    }
+  }
 }
