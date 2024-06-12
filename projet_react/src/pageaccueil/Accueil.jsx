@@ -21,7 +21,11 @@ function Accueil() {
                 <div class="actualité"> Actualités </div>
                 <br/>
                     {articles.map((article, key) => (
-                        <ArticleCard key={key} title={article.title} content={article.content} />
+                        <ArticleCard key={key} 
+                        title={article.title} 
+                        content={article.content}
+                        date={article.date}
+                         />
                     ))}
                 </div>
             </div>
