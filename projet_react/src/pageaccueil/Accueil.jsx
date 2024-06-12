@@ -8,7 +8,8 @@ import Reseau from './Reseau';
 function Accueil() {
 
     return (
-        <div>
+        <div className='accueil'>
+            <h1 className="mb-3">Page d'Accueil</h1>
             <div class="center">
                 <div class="contour">
                     <div class="actualité"> Actualités </div>
