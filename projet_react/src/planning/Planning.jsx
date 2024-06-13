@@ -1,9 +1,11 @@
 import React from 'react';
 import './style.css';
-import listeCours from './listeCours/listeCours.js'; // Adjust the import path as necessary
+import listeCours from './listeCours/listeCours.js';
+import Navbar from '../navbar/Navbar.jsx';
 
 export const Planning = () => {
-    return (
+    return (<>
+            <Navbar />
         <div className='planning'>
             <table>
                 <thead>
@@ -28,5 +30,6 @@ export const Planning = () => {
                 </tbody>
             </table>
         </div>
+        </>
     )
 }
