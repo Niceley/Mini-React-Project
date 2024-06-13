@@ -13,7 +13,6 @@ function Accueil() {
 
     const [open, setOpen] = useState(false);
     const [newArticle, setNewArticle] = useState({ title: '', content: '', date: '', image: '' });
-    const [allArticles, setAllArticles] = useState(articles);
 
     const togglePopup = () => {
         setOpen(!open);
@@ -25,10 +24,9 @@ function Accueil() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const updatedArticles = [...allArticles, { ...newArticle, id: allArticles.length + 1 }];
-        setAllArticles(updatedArticles);
-        // Réinitialiser le formulaire
+        articles.push({ ...newArticle, id: articles.length + 1 });
         setNewArticle({ title: '', content: '', date: '', image: '' });
+        setOpen(false);
     };
 
     return (

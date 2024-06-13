@@ -88,6 +88,7 @@ p{
     width: fit-content;
     background-color: white;
     max-height: 998px;
+    overflow-y: scroll;
 
     &.network{
       flex-direction: column;
