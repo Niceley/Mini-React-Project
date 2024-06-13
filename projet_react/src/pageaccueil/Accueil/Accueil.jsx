@@ -1,9 +1,9 @@
 
 import React, { useState } from 'react';
-import ArticleCard from '../ArticleCard';
+import ArticleCard from '../ListeArticle/ArticleCard';
 import articles from '../ListeArticle/ListeArticle';
 import listePosteReseaux from '../ListeArticle/ListePosteReseaux';
-import Reseau from '../Reseau';
+import Reseau from '../reseau/Reseau';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import './Accueil.css';
@@ -35,7 +35,7 @@ function Accueil() {
             <div className="center">
                 <div className="contour">
                     <div className="actualité"> Actualités
-                    <button type="button" class="btn btn-primary addArticle" onClick={togglePopup}> Ajouter un article </button>
+                        <button type="button" className="btn btn-primary addArticle" onClick={togglePopup}> Ajouter un article </button>
                         <Popup open={open} closeOnDocumentClick onClose={togglePopup}>
                             <div className="popup">
                                 <span> Ajouter un nouvel article </span>

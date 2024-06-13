@@ -4,6 +4,7 @@ import Accueil from './pageaccueil/Accueil/Accueil';
 import { ArticleDetails } from './articleDetail/ArticleDetail';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from '../src/navbar/Navbar';
+import {Planning} from './planning/Planning';
 
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/">
             <Route index element={<Accueil />} />
             <Route path="article/:id" element={<ArticleDetails />} />
+            <Route path="planning" element={<Planning />} />
           </Route>
         </Routes>
       </BrowserRouter>
