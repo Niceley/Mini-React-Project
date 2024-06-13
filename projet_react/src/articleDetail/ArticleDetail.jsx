@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import articles from '../pageaccueil/ListeArticle/ListeArticle';
 import './style.css';
 import Carrousel from '../pageaccueil/carrousel/Carrousel';
+import Navbar from '../navbar/Navbar';
 
 
 export const ArticleDetails = () => {
@@ -11,7 +12,9 @@ export const ArticleDetails = () => {
     if (!article) {
         return <p>Article inexistant</p>;
       }
-    return(<div className='articleFull'>
+    return(<>
+    <Navbar />
+    <div className='articleFull'>
         <Carrousel />
         <h2 className="titre">
           {article.title}
@@ -29,5 +32,6 @@ export const ArticleDetails = () => {
             </button>
           </Link>
         </div>
-      </div>)
+      </div>
+      </>)
 }

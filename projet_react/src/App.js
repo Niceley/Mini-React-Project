@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Accueil from './pageaccueil/Accueil/Accueil';
 import { ArticleDetails } from './articleDetail/ArticleDetail';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route,Link } from "react-router-dom";
 import Navbar from '../src/navbar/Navbar';
 import {Planning} from './planning/Planning';
 
@@ -11,15 +11,6 @@ import {Planning} from './planning/Planning';
 
 function App() {
   return (<>
-    <div className="header">
-      <div className="left">
-        <a>
-          <img alt="Logo myEfrei"
-            src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Languages/French/LOGO_EFREI-WEB_blanc.png"></img>
-        </a>
-      </div>
-    </div>
-    <Navbar />
     <div className="App">
       <BrowserRouter>
         <Routes>
