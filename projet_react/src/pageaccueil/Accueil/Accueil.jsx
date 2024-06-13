@@ -8,6 +8,7 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import './Accueil.css';
 import Carrousel from '../carrousel/Carrousel';
+import Navbar from '../../navbar/Navbar';
 
 function Accueil() {
 
@@ -29,7 +30,8 @@ function Accueil() {
         setOpen(false);
     };
 
-    return (
+    return (<>
+        <Navbar />
         <div className='accueil'>
             <Carrousel />
             <div className="center">
@@ -75,6 +77,7 @@ function Accueil() {
 
             </div>
         </div>
+        </>
     );
 }
 
