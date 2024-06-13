@@ -1,8 +1,18 @@
 import React from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  return (
+  return (<>
+    <div className="header">
+      <div className="left">
+        <a>
+          <Link to="/">
+          <img alt="Logo myEfrei" src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Languages/French/LOGO_EFREI-WEB_blanc.png"></img>
+          </Link>
+        </a>
+      </div>
+    </div>
     <nav className="navbar">
       <ul className="nav-list">
         <li className="nav-item active"><a href="#">ACCUEIL</a></li>
@@ -51,6 +61,7 @@ const Navbar = () => {
         </li>
       </ul>
     </nav>
+    </>
   );
 }
 
