@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ArticleCard from '../ListeArticle/ArticleCard';
 import articles from '../ListeArticle/ListeArticle';
 import listePosteReseaux from '../ListeArticle/ListePosteReseaux';
@@ -16,7 +16,7 @@ function Accueil() {
     const [newArticle, setNewArticle] = useState({ title: '', content: '', date: '', image: '' });
 
     const togglePopup = () => {
-        setOpen(!open);
+        setOpen(true);
     };
 
     const handleChange = (e) => {
@@ -30,6 +30,10 @@ function Accueil() {
         setOpen(false);
     };
 
+    useEffect(() => {
+        console.log('Liste article mise à jour : ', articles);
+      }, [articles]);
+
     return (<>
         <Navbar />
         <div className='accueil'>
@@ -37,8 +41,8 @@ function Accueil() {
             <div className="center">
                 <div className="contour">
                     <div className="actualité"> Actualités
-                        <button type="button" className="btn btn-primary addArticle" onClick={togglePopup}> Ajouter un article </button>
-                        <Popup open={open} closeOnDocumentClick onClose={togglePopup}>
+                        <button type="button" className="btn btn-primary addArticle" onClick={togglePopup}>Ajouter un article</button>
+                            <Popup open={open} closeOnDocumentClick>
                             <div className="popup">
                                 <span> Ajouter un nouvel article </span>
                                 <form onSubmit={handleSubmit}>
